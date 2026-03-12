@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: rgb(194, 218, 239);
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            letter-spacing: 0.05rem;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #blue {
+            background: blue;
+            grid-column: 1 / 2;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        #white {
+            background: white;
+            grid-column: 2 / 4;
+        }
+
+        #red {
+            background: red;
+            grid-column: 1 / 4;
+        }
+
+        #chile {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        .star {
+            width: 70px;
+            aspect-ratio: 1;
+            background: white;
+            clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+        }
+        #denmark {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+        #dred1 {
+            background: red;
+            grid-column: 1 / 5;
+            grid-row: 1 / 3;
+        }
+        #dred2 {
+            background: red;
+            grid-column: 1 / 5;
+            grid-row: 1 / 3;
+            width: 60px;
+            height: 200px;
+        }
+        #dred3 {
+            background: white;
+            grid-column: 2 / 5;
+            grid-row: 1 / 3;
+            width: 30px;
+            height: 200px;
+        }
+        #dred4 {
+            background: white;
+            grid-column: 1 / 5;
+            grid-row: 2/ 3;
+            height: 30px;
+        }
+        #finland {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+        #fwhite1 {
+            background: white;
+            grid-column: 1 / 5;
+            grid-row: 1 / 3;
+        }
+        #fwhite2 {
+            background: white;
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+        }
+        #fwhite3 {
+            background: blue;
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+            width: 40px;
+            height: 200px;
+        }
+        #fwhite4 {
+            background: blue;
+            grid-column: 1 / 5;
+            grid-row: 2/3;
+            height: 40px
+        }
+        #benin {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+        #bgreen {
+            background: green;
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+        #byellow {
+            background: yellow;
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+        }
+        #bred {
+            background: red;
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+        }
+table {
+    justify-content: center;
+    width: 100%;
+    padding: 350px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Using CSS Grid to make Country Flags</h1>
+    </header>
+    <table>
+    <tr>
+       <td>
+<h2>Chile</h2>
+        <div id="chile">
+            <div id="blue">
+                <div class="star"></div>
+            </div>
+            <div id="white"></div>
+            <div id="red"></div>
+        </div>
+        <hr>
+
+       </td> 
+         <td>
+        <h2>Denmark</h2>
+        <div id="denmark">
+            <div id="dred1"></div>
+            <div id="dred2"></div>
+            <div id="dred3"></div>
+            <div id="dred4"></div>
+        </div>
+        <hr>
+        </td>
+<td>
+       <h2>Finland</h2>
+        <div id="finland">
+            <div id="fwhite1"></div>
+            <div id="fwhite2"></div>
+            <div id="fwhite3"></div>
+            <div id="fwhite4"></div>
+        </div>
+        <hr>
+    </td>
+
+    <td>   <h2>Benin</h2>
+        <div id="benin">
+            <div id="bgreen"></div>
+            <div id="byellow"></div>
+            <div id="bred"></div>
+        </div>
+        <hr>
+    </td>
+    </tr>
+    </table>
+</body>
+
+</html>
